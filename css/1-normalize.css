@@ -1,0 +1,50 @@
+/* Ukuran elemen mencakup padding dan border. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* Media mengikuti lebar container. */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+/* Kontrol form mengikuti font aplikasi. */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+/* Fokus keyboard tetap terlihat. */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
